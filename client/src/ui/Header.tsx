@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { logo } from '../assets';
 import { IoClose, IoSearchOutline } from 'react-icons/io5';
 import { FiShoppingCart, FiUser } from 'react-icons/fi';
