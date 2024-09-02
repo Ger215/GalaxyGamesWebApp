@@ -4,6 +4,16 @@ import { IoClose, IoSearchOutline } from 'react-icons/io5';
 import { FiShoppingCart, FiUser } from 'react-icons/fi';
 import { MdFavoriteBorder } from 'react-icons/md';
 import Container from './Container';
+import { FaChevronDown } from 'react-icons/fa';
+
+const bottomNavigation = [
+  { title: 'Inicio', link: '/' },
+  { title: 'Tienda', link: '/product' },
+  { title: 'Carrito', link: '/cart' },
+  { title: 'Pedidos', link: '/orders' },
+  { title: 'Perfil', link: '/profile' },
+  { title: 'Blog', link: '/blog' },
+];
 
 const Header = () => {
   const [searchText, setSearchText] = useState('');
@@ -43,6 +53,22 @@ const Header = () => {
             </span>
           </div>
         </div>
+      </div>
+      <div className="w-full bg-darkText text-whiteText ">
+        <Container className="py-2 max-w-4xl flex items-center gap-5 justify-between">
+          <p className="flex items-center gap-1">
+            Categoria <FaChevronDown />
+          </p>
+          {bottomNavigation.map(({ title }) => (
+            <p
+              key={title}
+              className="uppercase hidden md:inline-flex text-sm font-semibold text-whiteText/90 hover:text-whiteText duration-200 relative overflow-hidden group cursor-pointer"
+            >
+              {title}
+              <span className="inline-flex w-full h-[1px] bg-whiteText absolute bottom-0 left-0 transform -translate-x-[105%] group-hover:translate-x-0 duration-300" />
+            </p>
+          ))}
+        </Container>
       </div>
     </div>
   );
