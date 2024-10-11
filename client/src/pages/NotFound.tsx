@@ -95,6 +95,9 @@ const NotFound = () => {
                 </li>
               ))}
             </ul>
+            <div className="mt-5 flex justify-center">
+              <LinkButton showButton={true} link={'/'} />
+            </div>
           </div>
         </main>
       </div>
