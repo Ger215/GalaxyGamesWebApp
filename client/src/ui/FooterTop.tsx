@@ -6,14 +6,14 @@ const FooterTop = () => {
     {
       name: 'Envío gratis y en minutos',
       imageSrc:
-        'https://tailwindui.com/img/ecommerce/icons/icon-shipping-simple.svg',
+        'https://img.icons8.com/ios/100/000000/in-transit',
       description:
         'Contamos con envío gratis y en minutos en todos nuestros productos.',
     },
     {
       name: '1 año de Garantía',
       imageSrc:
-        'https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg',
+        'https://img.icons8.com/ios/100/000000/warranty',
       description:
         'Todos nuestros productos cuentan con garantía válida por 1 año.',
     },
