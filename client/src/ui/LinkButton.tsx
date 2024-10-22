@@ -17,7 +17,7 @@ const LinkButton = ({ showButton, link, className }: Props) => {
 
   return (
     <Link to={link ? link : '/products'} className={newClassName}>
-      {showButton && <FaArrowLeft />} Seguir navegando
+      {showButton && <FaArrowLeft />} Ver Catálogo
     </Link>
   );
 };
